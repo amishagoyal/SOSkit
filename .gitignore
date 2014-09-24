@@ -1,0 +1,17 @@
+# xcode noise
+build/*
+*.pbxuser
+*.mode1v3
+*.xcworkspace
+*.xccheckout
+xcuserdata
+project.xcworkspace/*
+xcuserdata/*
+Pods/*
+Podfile.lock
+Pods
+
+# osx noise
+.DS_Store
+.Pods
+profile
