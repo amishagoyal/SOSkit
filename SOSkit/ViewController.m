@@ -10,7 +10,7 @@
 #import "City.h"
 #import <SOS/SOS.h>
 #import "WeatherDetailViewController.h"
-static NSString * const BaseURLString = @"http://localhost:6080/RESTService-0.1/";
+static NSString * const BaseURLString = @"http://192.168.1.6:6080/RESTService-0.1/";
 @interface SOSSessionManager(Beta)
 + (BOOL) enableNetworkSpeedTest;
 @end
