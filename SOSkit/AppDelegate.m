@@ -7,12 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "SOS.h"
+
+@interface AppDelegate()
+@property (strong,nonatomic) UINavigationController *navController;
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.autoresizesSubviews = YES;
+
     // Override point for customization after application launch.
+    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    SOSContainerViewController *newRoot = [[SOSContainerViewController alloc] initWithViewController:self.navController];
+    [self.window setRootViewController:newRoot];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

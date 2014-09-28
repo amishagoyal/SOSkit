@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Venue.h"
-#import <RestKit/RestKit.h>
 
-@interface ViewController : UIViewController
-@property (nonatomic, strong) NSArray *venues;
-
+@interface ViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic, strong) IBOutlet UITableView *resultTableView;
 @end

@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10FD93401DA5473A9EE3D9F9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48002478649D4E36A13FAFB7 /* libPods.a */; };
+		22FE10F1442DE52A2A4D985A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48002478649D4E36A13FAFB7 /* libPods.a */; };
+		A774D87219D835E10035BCD8 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = A774D87119D835E10035BCD8 /* City.m */; };
+		A774D87419D839620035BCD8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A774D87319D839620035BCD8 /* ViewController.xib */; };
+		A774D87819D84AE20035BCD8 /* WeatherDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A774D87619D84AE20035BCD8 /* WeatherDetailViewController.m */; };
+		A774D87919D84AE20035BCD8 /* WeatherDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A774D87719D84AE20035BCD8 /* WeatherDetailViewController.xib */; };
+		A78E40B019D6E44900ED8F4A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78E40AF19D6E44900ED8F4A /* CFNetwork.framework */; };
+		A78E40B219D6E45100ED8F4A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78E40B119D6E45100ED8F4A /* CoreData.framework */; };
+		A78E40B419D6E45600ED8F4A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78E40B319D6E45600ED8F4A /* MobileCoreServices.framework */; };
+		A78E40B619D6E46400ED8F4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78E40B519D6E46400ED8F4A /* Security.framework */; };
+		A78E40B819D6E46A00ED8F4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78E40B719D6E46A00ED8F4A /* SystemConfiguration.framework */; };
 		A7E5900119D1E2C600BCF74A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E5900019D1E2C600BCF74A /* Foundation.framework */; };
 		A7E5900319D1E2C600BCF74A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E5900219D1E2C600BCF74A /* CoreGraphics.framework */; };
 		A7E5900519D1E2C600BCF74A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E5900419D1E2C600BCF74A /* UIKit.framework */; };
 		A7E5900B19D1E2C600BCF74A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7E5900919D1E2C600BCF74A /* InfoPlist.strings */; };
 		A7E5900D19D1E2C600BCF74A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E5900C19D1E2C600BCF74A /* main.m */; };
 		A7E5901119D1E2C600BCF74A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E5901019D1E2C600BCF74A /* AppDelegate.m */; };
-		A7E5901419D1E2C600BCF74A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E5901219D1E2C600BCF74A /* Main.storyboard */; };
 		A7E5901719D1E2C600BCF74A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E5901619D1E2C600BCF74A /* ViewController.m */; };
 		A7E5901919D1E2C600BCF74A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E5901819D1E2C600BCF74A /* Images.xcassets */; };
 		A7E5902019D1E2C600BCF74A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E5901F19D1E2C600BCF74A /* XCTest.framework */; };
@@ -22,7 +30,6 @@
 		A7E5902219D1E2C600BCF74A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E5900419D1E2C600BCF74A /* UIKit.framework */; };
 		A7E5902A19D1E2C600BCF74A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7E5902819D1E2C600BCF74A /* InfoPlist.strings */; };
 		A7E5902C19D1E2C700BCF74A /* SOSkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E5902B19D1E2C700BCF74A /* SOSkitTests.m */; };
-		A7E5903819D29B6100BCF74A /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E5903719D29B6100BCF74A /* Venue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BBE45EEDE69076317FA0910 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		48002478649D4E36A13FAFB7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		81B42F06EEC74C098608E024 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A774D87019D835E10035BCD8 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		A774D87119D835E10035BCD8 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		A774D87319D839620035BCD8 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		A774D87519D84AE20035BCD8 /* WeatherDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDetailViewController.h; sourceTree = "<group>"; };
+		A774D87619D84AE20035BCD8 /* WeatherDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDetailViewController.m; sourceTree = "<group>"; };
+		A774D87719D84AE20035BCD8 /* WeatherDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherDetailViewController.xib; sourceTree = "<group>"; };
+		A78E40AF19D6E44900ED8F4A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A78E40B119D6E45100ED8F4A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A78E40B319D6E45600ED8F4A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A78E40B519D6E46400ED8F4A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A78E40B719D6E46A00ED8F4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A7E58FFD19D1E2C600BCF74A /* SOSkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOSkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E5900019D1E2C600BCF74A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A7E5900219D1E2C600BCF74A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,7 +66,6 @@
 		A7E5900E19D1E2C600BCF74A /* SOSkit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOSkit-Prefix.pch"; sourceTree = "<group>"; };
 		A7E5900F19D1E2C600BCF74A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A7E5901019D1E2C600BCF74A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A7E5901319D1E2C600BCF74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7E5901519D1E2C600BCF74A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A7E5901619D1E2C600BCF74A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A7E5901819D1E2C600BCF74A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -57,8 +74,7 @@
 		A7E5902719D1E2C600BCF74A /* SOSkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOSkitTests-Info.plist"; sourceTree = "<group>"; };
 		A7E5902919D1E2C600BCF74A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A7E5902B19D1E2C700BCF74A /* SOSkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOSkitTests.m; sourceTree = "<group>"; };
-		A7E5903619D29B6100BCF74A /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
-		A7E5903719D29B6100BCF74A /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
+		EB548380689AFAEACCCA3E94 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +82,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78E40B819D6E46A00ED8F4A /* SystemConfiguration.framework in Frameworks */,
+				A78E40B619D6E46400ED8F4A /* Security.framework in Frameworks */,
+				A78E40B419D6E45600ED8F4A /* MobileCoreServices.framework in Frameworks */,
+				A78E40B219D6E45100ED8F4A /* CoreData.framework in Frameworks */,
+				A78E40B019D6E44900ED8F4A /* CFNetwork.framework in Frameworks */,
 				A7E5900319D1E2C600BCF74A /* CoreGraphics.framework in Frameworks */,
 				A7E5900519D1E2C600BCF74A /* UIKit.framework in Frameworks */,
 				A7E5900119D1E2C600BCF74A /* Foundation.framework in Frameworks */,
-				10FD93401DA5473A9EE3D9F9 /* libPods.a in Frameworks */,
+				22FE10F1442DE52A2A4D985A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AE8701B49C5505DC32DE1F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB548380689AFAEACCCA3E94 /* Pods.debug.xcconfig */,
+				3BBE45EEDE69076317FA0910 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A7E58FF419D1E2C600BCF74A = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +123,7 @@
 				A7E5902519D1E2C600BCF74A /* SOSkitTests */,
 				A7E58FFF19D1E2C600BCF74A /* Frameworks */,
 				A7E58FFE19D1E2C600BCF74A /* Products */,
-				81B42F06EEC74C098608E024 /* Pods.xcconfig */,
+				2AE8701B49C5505DC32DE1F1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +139,11 @@
 		A7E58FFF19D1E2C600BCF74A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A78E40B719D6E46A00ED8F4A /* SystemConfiguration.framework */,
+				A78E40B519D6E46400ED8F4A /* Security.framework */,
+				A78E40B319D6E45600ED8F4A /* MobileCoreServices.framework */,
+				A78E40B119D6E45100ED8F4A /* CoreData.framework */,
+				A78E40AF19D6E44900ED8F4A /* CFNetwork.framework */,
 				A7E5900019D1E2C600BCF74A /* Foundation.framework */,
 				A7E5900219D1E2C600BCF74A /* CoreGraphics.framework */,
 				A7E5900419D1E2C600BCF74A /* UIKit.framework */,
@@ -121,15 +156,18 @@
 		A7E5900619D1E2C600BCF74A /* SOSkit */ = {
 			isa = PBXGroup;
 			children = (
+				A774D87019D835E10035BCD8 /* City.h */,
+				A774D87119D835E10035BCD8 /* City.m */,
 				A7E5900F19D1E2C600BCF74A /* AppDelegate.h */,
 				A7E5901019D1E2C600BCF74A /* AppDelegate.m */,
-				A7E5901219D1E2C600BCF74A /* Main.storyboard */,
 				A7E5901519D1E2C600BCF74A /* ViewController.h */,
 				A7E5901619D1E2C600BCF74A /* ViewController.m */,
+				A774D87319D839620035BCD8 /* ViewController.xib */,
 				A7E5901819D1E2C600BCF74A /* Images.xcassets */,
 				A7E5900719D1E2C600BCF74A /* Supporting Files */,
-				A7E5903619D29B6100BCF74A /* Venue.h */,
-				A7E5903719D29B6100BCF74A /* Venue.m */,
+				A774D87519D84AE20035BCD8 /* WeatherDetailViewController.h */,
+				A774D87619D84AE20035BCD8 /* WeatherDetailViewController.m */,
+				A774D87719D84AE20035BCD8 /* WeatherDetailViewController.xib */,
 			);
 			path = SOSkit;
 			sourceTree = "<group>";
@@ -170,11 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7E5902F19D1E2C700BCF74A /* Build configuration list for PBXNativeTarget "SOSkit" */;
 			buildPhases = (
-				4A9A1ACA24F74EAEB8931BBA /* Check Pods Manifest.lock */,
+				C8F0508D30484BA423F10970 /* Check Pods Manifest.lock */,
 				A7E58FF919D1E2C600BCF74A /* Sources */,
 				A7E58FFA19D1E2C600BCF74A /* Frameworks */,
 				A7E58FFB19D1E2C600BCF74A /* Resources */,
-				43FAFFDB1D7D4C90B6DD9AA8 /* Copy Pods Resources */,
+				17A94482E6C13A1911460D8F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,8 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E5901919D1E2C600BCF74A /* Images.xcassets in Resources */,
+				A774D87419D839620035BCD8 /* ViewController.xib in Resources */,
+				A774D87919D84AE20035BCD8 /* WeatherDetailViewController.xib in Resources */,
 				A7E5900B19D1E2C600BCF74A /* InfoPlist.strings in Resources */,
-				A7E5901419D1E2C600BCF74A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +297,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43FAFFDB1D7D4C90B6DD9AA8 /* Copy Pods Resources */ = {
+		17A94482E6C13A1911460D8F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,10 +309,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4A9A1ACA24F74EAEB8931BBA /* Check Pods Manifest.lock */ = {
+		C8F0508D30484BA423F10970 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,8 +335,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E5901719D1E2C600BCF74A /* ViewController.m in Sources */,
-				A7E5903819D29B6100BCF74A /* Venue.m in Sources */,
+				A774D87819D84AE20035BCD8 /* WeatherDetailViewController.m in Sources */,
 				A7E5901119D1E2C600BCF74A /* AppDelegate.m in Sources */,
+				A774D87219D835E10035BCD8 /* City.m in Sources */,
 				A7E5900D19D1E2C600BCF74A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,14 +367,6 @@
 				A7E5900A19D1E2C600BCF74A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A7E5901219D1E2C600BCF74A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A7E5901319D1E2C600BCF74A /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		A7E5902819D1E2C600BCF74A /* InfoPlist.strings */ = {
@@ -420,28 +452,74 @@
 		};
 		A7E5903019D1E2C700BCF74A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81B42F06EEC74C098608E024 /* Pods.xcconfig */;
+			baseConfigurationReference = EB548380689AFAEACCCA3E94 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Model Metrics, Inc.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SOSkit/SOSkit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "SOSkit/SOSkit-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OpenTok\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Raven\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SOS\"",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0e2a7bb3-84ac-46bf-b2e8-d58c57913655";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		A7E5903119D1E2C700BCF74A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81B42F06EEC74C098608E024 /* Pods.xcconfig */;
+			baseConfigurationReference = 3BBE45EEDE69076317FA0910 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Model Metrics, Inc.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SOSkit/SOSkit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "SOSkit/SOSkit-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/OpenTok\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Raven\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SOS\"",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0e2a7bb3-84ac-46bf-b2e8-d58c57913655";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
