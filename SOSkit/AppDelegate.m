@@ -24,6 +24,9 @@
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    /*
+     Setting up the SOS Conatiner view.
+     */
     SOSContainerViewController *newRoot = [[SOSContainerViewController alloc] initWithViewController:self.navController];
     [self.window setRootViewController:newRoot];
     [self.window makeKeyAndVisible];

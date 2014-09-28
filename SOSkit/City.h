@@ -4,6 +4,7 @@
 //
 //  Created by Amisha Goyal on 9/28/14.
 //  Copyright (c) 2014 Salesforce. All rights reserved.
+//  Class for mapping the JSON response.
 //
 
 #import <Foundation/Foundation.h>

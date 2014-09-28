@@ -37,24 +37,28 @@ static NSString * const BaseURLString = @"http://localhost:6080/RESTService-0.1/
 	// Do any additional setup after loading the view, typically from a nib.
     _cities = [NSMutableArray array];
     self.title =@"Cities";
-    [self jsonTapped:nil];
+    [self requestForData];
 }
 
-- (void)jsonTapped:(id)sender
+/*
+This method uses the AFNetworking framework to handle the request /response to the server.
+It also helps in serializing the JSOn response recieved.
+*/
+
+- (void)requestForData
 {
-    // 1
     NSString *string = [NSString stringWithFormat:@"%@city/index", BaseURLString];
     NSURL *url = [NSURL URLWithString:string];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-    // 2
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        
-//        [self.resultTableView reloadData];
+        /*
+         Handle the data mapping and add the city objects to an array _cities.
+         */
         [_cities removeAllObjects];
         for(NSDictionary *dataDictionary in (NSArray*)responseObject){
             City *city = [[City alloc] init];
@@ -67,10 +71,10 @@ static NSString * const BaseURLString = @"http://localhost:6080/RESTService-0.1/
             [_cities addObject:city];
             city =nil;
         }
+        // reload the table view with the response data.
         [self.resultTableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        // 4
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Retrieving data"
                                                             message:[error localizedDescription]
                                                            delegate:nil
@@ -79,7 +83,6 @@ static NSString * const BaseURLString = @"http://localhost:6080/RESTService-0.1/
         [alertView show];
     }];
     
-    // 5
     [operation start];
 }
 
@@ -99,6 +102,9 @@ static NSString * const BaseURLString = @"http://localhost:6080/RESTService-0.1/
     return [_cities count];
 }
 
+/*
+Load the weather detail view controller with the details of each city.
+*/
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     WeatherDetailViewController *detailController = [[WeatherDetailViewController alloc] initWithNibName:@"WeatherDetailViewController" bundle:nil];
     detailController.city = [_cities objectAtIndex:indexPath.row];
@@ -111,17 +117,15 @@ static NSString * const BaseURLString = @"http://localhost:6080/RESTService-0.1/
     // Dispose of any resources that can be recreated.
 }
 
+/*
+Action to start the SOS session */
 - (IBAction)startSession:(id)sender {
     NSLog(@"start session clicked *****************");
-    /*
-     SOSOptions *sosOpts = [SOSOptions optionsWithAccount:@"DreamForceApp"
-     application:@"sos"
-     email:@"lauren@example.com"]; // must match a customer record in your Salesforce Org.
-     */
-    SOSOptions *sosOpts = [SOSOptions optionsWithEmail:@"contact+richardhlloyd@sdo.mygbiz.com" // must match a customer record in your Salesforce Org.
-                                          liveAgentPod:@"d.la.gus.salesforce.com" // the hostname for the LiveAgent pod that your organization has been assigned.
-                                                 orgId:@"00DB00000000sHB" // the Salesforce organization id.
-                                          deploymentId:@"572B000000001hv"]; // the unique id of the deployment for this session.
+
+    SOSOptions *sosOpts = [SOSOptions optionsWithEmail:@"amisha.goyal@salesforce.com"
+                                          liveAgentPod:@"d.la.gus.salesforce.com"
+                                                 orgId:@"00DB00000000sHB"
+                                          deploymentId:@"572B000000001hv"]; 
     [[[SOSSessionManager sharedInstance] uiComponents] setConnectMessage:@"Are you ready to experience the Future of Customer Service?"];
     [sosOpts setEnvironment:SOSEnvironmentPreRelease];
     

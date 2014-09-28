@@ -25,7 +25,9 @@
     }
     return self;
 }
-
+/*
+Set up the detail view with the information in the respective city objects.
+*/
 -(void)setUpView{
     
     self.weatherLabel.text = _city.weatherCondition;
