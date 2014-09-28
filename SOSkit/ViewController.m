@@ -122,6 +122,7 @@ Action to start the SOS session */
 - (IBAction)startSession:(id)sender {
     NSLog(@"start session clicked *****************");
 
+    // TODO: Need to change the parameters
     SOSOptions *sosOpts = [SOSOptions optionsWithEmail:@"amisha.goyal@salesforce.com"
                                           liveAgentPod:@"d.la.gus.salesforce.com"
                                                  orgId:@"00DB00000000sHB"
