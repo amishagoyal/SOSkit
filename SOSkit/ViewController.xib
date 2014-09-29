@@ -26,7 +26,7 @@
                     </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jD-2T-5sl">
-                    <rect key="frame" x="31" y="518" width="248" height="30"/>
+                    <rect key="frame" x="31" y="514" width="248" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Start SOS">

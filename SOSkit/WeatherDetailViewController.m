@@ -35,7 +35,7 @@ Set up the detail view with the information in the respective city objects.
     NSLog(@"City :%@",_city);
     NSURL *url = [NSURL URLWithString:_city.weatherImageURL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    UIImage *placeholderImage = [UIImage imageNamed:@"placeholder"];
+    UIImage *placeholderImage = [UIImage imageNamed:@"Placeholder.pjeg"];
     
     __weak UIImageView *weakImageView = _weatherImageView;
     

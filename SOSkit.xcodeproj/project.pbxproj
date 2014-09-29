@@ -30,6 +30,7 @@
 		A7E5902219D1E2C600BCF74A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E5900419D1E2C600BCF74A /* UIKit.framework */; };
 		A7E5902A19D1E2C600BCF74A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7E5902819D1E2C600BCF74A /* InfoPlist.strings */; };
 		A7E5902C19D1E2C700BCF74A /* SOSkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E5902B19D1E2C700BCF74A /* SOSkitTests.m */; };
+		A7EF027F19D9860600CE1D0F /* Placeholder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A7EF027E19D9860600CE1D0F /* Placeholder.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		A7E5902719D1E2C600BCF74A /* SOSkitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOSkitTests-Info.plist"; sourceTree = "<group>"; };
 		A7E5902919D1E2C600BCF74A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A7E5902B19D1E2C700BCF74A /* SOSkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOSkitTests.m; sourceTree = "<group>"; };
+		A7EF027E19D9860600CE1D0F /* Placeholder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Placeholder.jpeg; sourceTree = "<group>"; };
 		EB548380689AFAEACCCA3E94 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 		A7E5900719D1E2C600BCF74A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7EF027E19D9860600CE1D0F /* Placeholder.jpeg */,
 				A7E5900819D1E2C600BCF74A /* SOSkit-Info.plist */,
 				A7E5900919D1E2C600BCF74A /* InfoPlist.strings */,
 				A7E5900C19D1E2C600BCF74A /* main.m */,
@@ -281,6 +284,7 @@
 			files = (
 				A7E5901919D1E2C600BCF74A /* Images.xcassets in Resources */,
 				A774D87419D839620035BCD8 /* ViewController.xib in Resources */,
+				A7EF027F19D9860600CE1D0F /* Placeholder.jpeg in Resources */,
 				A774D87919D84AE20035BCD8 /* WeatherDetailViewController.xib in Resources */,
 				A7E5900B19D1E2C600BCF74A /* InfoPlist.strings in Resources */,
 			);

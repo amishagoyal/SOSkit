@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "City.h"
-@interface WeatherDetailViewController : UIViewController
 
+@interface WeatherDetailViewController : UIViewController
 @property (nonatomic,strong) City *city;
--(void)setUpView;
 @end

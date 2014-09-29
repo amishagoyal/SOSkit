@@ -10,7 +10,7 @@
 #import "City.h"
 #import <SOS/SOS.h>
 #import "WeatherDetailViewController.h"
-static NSString * const BaseURLString = @"http://192.168.1.6:6080/RESTService-0.1/";
+static NSString * const BaseURLString = @"http://10.106.62.204:6080/RESTService-0.1/";
 @interface SOSSessionManager(Beta)
 + (BOOL) enableNetworkSpeedTest;
 @end
@@ -95,6 +95,7 @@ It also helps in serializing the JSOn response recieved.
     }
     City *city = [_cities objectAtIndex:indexPath.row];
     cell.textLabel.text = city.name;
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     return cell;
 }
 
@@ -123,10 +124,10 @@ Action to start the SOS session */
     NSLog(@"start session clicked *****************");
 
     // TODO: Need to change the parameters
-    SOSOptions *sosOpts = [SOSOptions optionsWithEmail:@"amisha.goyal@salesforce.com"
-                                          liveAgentPod:@"d.la.gus.salesforce.com"
-                                                 orgId:@"00DB00000000sHB"
-                                          deploymentId:@"572B000000001hv"]; 
+    SOSOptions *sosOpts = [SOSOptions optionsWithEmail:@"lcamposguajardo@salesforce.com" // must match a customer record in your Salesforce Org.
+                                          liveAgentPod:@"d.la.gus.salesforce.com" // the hostname for the LiveAgent pod that your organization has been assigned.
+                                                 orgId:@"00DB00000000oqp" // the Salesforce organization id.
+                                          deploymentId:@"0NWB00000004C9I"]; // the unique id of the deployment for this session.
     [[[SOSSessionManager sharedInstance] uiComponents] setConnectMessage:@"Are you ready to experience the Future of Customer Service?"];
     [sosOpts setEnvironment:SOSEnvironmentPreRelease];
     
